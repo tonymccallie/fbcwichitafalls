@@ -27,7 +27,7 @@ export class TabsPage {
 	}
 
 	giving() {
-		this.iab.create('http://www.fbcwf.org/pages/page.asp?page_id=239772','_system');
+		this.iab.create('https://www.fbcwf.org/pages/page.asp?page_id=239772','_system');
 	}
 
 }

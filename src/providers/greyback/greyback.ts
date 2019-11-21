@@ -6,7 +6,7 @@ import * as moment from 'moment';
 
 @Injectable()
 export class GreybackProvider {
-	rootUrl: string = 'http://fbcwf.server3.greyback.net/';
+	rootUrl: string = 'https://www.fbcwf.org/';
 	headers: any = new Headers;
 	opts: any;
 
@@ -119,7 +119,7 @@ Name: "Perkins LIFE Group Fellowship - January",
 OccurrenceEndTime: "01/15/2018 08:00:00 PM",
 OccurrenceId: 401278366,
 OccurrenceStartTime: "01/15/2018 06:00:00 PM",
-PublicEventUrl: "http://public.serviceu.com/calendar/EventDetails.asp?OrgKey=9ccb6bd6-c8f2-4e89-8b1e-b8cfbc85c19d&EventID=9872952&OccID=401278366",
+PublicEventUrl: "https://public.serviceu.com/calendar/EventDetails.asp?OrgKey=9ccb6bd6-c8f2-4e89-8b1e-b8cfbc85c19d&EventID=9872952&OccID=401278366",
 RegistrationEnabled: 0,
 RegistrationUrl: "",
 ResourceEndTime: "01/15/2018 08:00:00 PM",

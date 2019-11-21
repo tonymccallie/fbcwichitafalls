@@ -1,6 +1,6 @@
 {
   "name": "fbcwichitafalls",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "author": "GreyBack Labs, LLP",
   "homepage": "https://fbcwf.org/",
   "private": true,
@@ -33,7 +33,7 @@
     "@ionic/storage": "2.0.1",
     "angular2-moment": "^1.7.0",
     "audio-context-polyfill": "^1.0.0",
-    "cordova-android": "^7.1.4",
+    "cordova-android": "^8.1.0",
     "cordova-ios": "^4.5.4",
     "cordova-plugin-actionsheet": "^2.3.3",
     "cordova-plugin-add-swift-support": "^1.7.1",
@@ -85,8 +85,7 @@
       }
     },
     "platforms": [
-      "ios",
-      "android"
+      "ios"
     ]
   }
 }
