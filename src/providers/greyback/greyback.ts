@@ -6,8 +6,7 @@ import * as moment from 'moment';
 
 @Injectable()
 export class GreybackProvider {
-	// rootUrl: string = 'http://newhopeqc.server3.greyback.net';
-	rootUrl: string = 'https://newhopeqc.org';
+	rootUrl: string = 'http://fbcwf.server3.greyback.net/';
 	headers: any = new Headers;
 	opts: any;
 
@@ -17,6 +16,7 @@ export class GreybackProvider {
 		this.headers.append('Accept', 'application/json');
 		this.headers.append('Content-Type', 'application/json');
 		// this.headers.append('Authorization', "Basic " + btoa('patrickkemp:Three3leaf'));
+		// this.headers.append('Authorization', "Basic " + btoa('it@fbcwf.org:starsareeyes'));
 		this.opts = new RequestOptions({ headers: this.headers });
 	}
 
@@ -81,7 +81,7 @@ export class GreybackProvider {
 	getCalendar2(index) {
 		return new Promise(resolve => {
 			// for local dev must run Chrome with: open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
-			this.httpClient.get(this.rootUrl +'/ajax/plugin/organization/organization_departments/suproxy2/occurrences').subscribe(
+			this.httpClient.get('https://fbcwf.org/ajax/plugin/organization/organization_departments/suproxy2/occurrences').subscribe(
 					data => {
 					resolve(data);
 				},
@@ -96,7 +96,7 @@ export class GreybackProvider {
 /*
 {
 CategoryList: "Department Event",
-ContactEmail: "abills@fxxxbcwf.org",
+ContactEmail: "abills@fbcwf.org",
 ContactName: "Angela Bills",
 ContactPhone: "",
 DateModified: "01/15/2018 03:36:31 PM",
@@ -119,7 +119,7 @@ Name: "Perkins LIFE Group Fellowship - January",
 OccurrenceEndTime: "01/15/2018 08:00:00 PM",
 OccurrenceId: 401278366,
 OccurrenceStartTime: "01/15/2018 06:00:00 PM",
-PublicEventUrl: "http://public.serviceu.com/calendar/EventDetails.asp?OrgKey=9ccb6bd6-c8f2-4e89-8b1e-b8cfxxxxxxxxbc85c19d&EventID=9872952&OccID=401278366",
+PublicEventUrl: "http://public.serviceu.com/calendar/EventDetails.asp?OrgKey=9ccb6bd6-c8f2-4e89-8b1e-b8cfbc85c19d&EventID=9872952&OccID=401278366",
 RegistrationEnabled: 0,
 RegistrationUrl: "",
 ResourceEndTime: "01/15/2018 08:00:00 PM",

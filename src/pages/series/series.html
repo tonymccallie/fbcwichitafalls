@@ -7,7 +7,7 @@
 
 <ion-content>
 	<div *ngIf="!latest">
-		<img src="assets/img/newhope-sermon-load.png" />
+		<img src="assets/img/fbwf_sermon_load.jpg" />
 	</div>
 	<div *ngFor="let recent of latest">
 		<img *ngIf="recent.MessageSeries.MediaImage.filename" src="{{rootUrl}}/img/thumb/{{recent.MessageSeries.MediaImage.filename}}/width:1000/height:600/crop:true/zoom:auto" (click)="viewSeries(recent.MessageSeries)">
@@ -19,7 +19,7 @@
 	<div *ngIf="!series">
 		<ion-row>
 			<ion-col col-6 *ngFor="let image of [0,1,2,3,4,5,6]">
-				<img src="assets/img/newhope-sermon-load.png" />
+				<img src="assets/img/fbwf_sermon_load.jpg" />
 			</ion-col>
 		</ion-row>
 	</div>
@@ -27,7 +27,7 @@
 		<ion-row>
 			<ion-col col-6 *ngFor="let single of series; let i = index" (click)="viewSeries(single)">
 				<img *ngIf="single.MediaImage.filename" src="{{rootUrl}}/img/thumb/{{single.MediaImage.filename}}/width:1000/height:600/crop:true/zoom:auto">
-				<img *ngIf="!single.MediaImage.filename" src="assets/img/newhope-sermon-load.png" />
+				<img *ngIf="!single.MediaImage.filename" src="assets/img/fbwf_sermon_load.jpg" />
 			</ion-col>
 		</ion-row>
 	</ion-grid>

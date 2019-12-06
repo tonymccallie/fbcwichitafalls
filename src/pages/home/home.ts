@@ -38,9 +38,9 @@ export class HomePage {
 		this.greybackProvider.getNews().subscribe(news => {
 			this.news = news.data;
 		});
-		// this.greybackProvider.getCommunity().subscribe(posts => {
-		// 	this.posts = posts.data;
-		// });
+		this.greybackProvider.getCommunity().subscribe(posts => {
+			this.posts = posts.data;
+		});
 		// this.greybackProvider.getCalendars().subscribe(results => {
 		// 	console.log(results);
 		// }, msg => console.error(`ErrorFOO: ${msg.status} ${msg.statusText}`));

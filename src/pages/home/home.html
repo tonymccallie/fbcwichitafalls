@@ -14,7 +14,10 @@
 	<ion-toolbar color="primary">
 		Community Feed
 	</ion-toolbar>
-	<!-- <ion-card *ngFor="let post of posts; let i = index">
+	<!-- <ion-refresher (ionRefresh)="doRefresh($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher> -->
+	<ion-card *ngFor="let post of posts; let i = index">
 		<img *ngIf="post.CommunityPost.type!='gallery' && post.MediaImage.filename" src="{{rootUrl}}/img/thumb/{{post.MediaImage.filename}}/width:1000/height:600/crop:true/zoom:auto" />
 		<div *ngIf="post.CommunityPost.type=='gallery'">
 			<ion-slides autoplay="5000" loop="true" *ngIf="post.CommunityPicture && post.CommunityPicture.length">
@@ -26,6 +29,10 @@
 		<ion-card-content>
 			<ion-card-title>{{post.CommunityPost.title}}</ion-card-title>
 			<div [innerHTML]="post.CommunityPost.body"></div>
+			<!-- <pre>{{post | json}}</pre> -->
 		</ion-card-content>
-	</ion-card> -->
+	</ion-card>
+	<!-- <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll> -->
 </ion-content>

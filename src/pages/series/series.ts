@@ -17,7 +17,6 @@ export class SeriesPage {
 		this.rootUrl = greybackProvider.rootUrl;
 		this.greybackProvider.getSeries().subscribe(series => {
 			this.series = series.data;
-			console.log('series.data', series.data);
 		});
 
 	}

@@ -24,11 +24,11 @@ export class SermonsPage {
 	}
 
 	ionViewDidLoad() {
-		// console.log('ionViewDidLoad SermonsPage');
+		console.log('ionViewDidLoad SermonsPage');
 	}
 
 	ionViewWillEnter() {
-		// console.log('ionViewWillEnter SermonsPage');
+		console.log('ionViewWillEnter SermonsPage');
 	}
 
 	viewSermon(sermon) {

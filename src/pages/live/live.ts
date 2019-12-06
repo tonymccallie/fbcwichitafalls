@@ -15,7 +15,7 @@ export class LivePage {
 		public navParams: NavParams,
 		public sanitzier: DomSanitizer
 	) {
-		// this.url = this.sanitzier.bypassSecurityTrustResourceUrl("https://fxxxxxxbcwf.org/live");//"https://livestream.com/accounts/11452393/events/7167625/player?autoPlay=false");
+		this.url = this.sanitzier.bypassSecurityTrustResourceUrl("https://fbcwf.org/live");//"https://livestream.com/accounts/11452393/events/7167625/player?autoPlay=false");
 	}
 
 	ionViewDidLoad() {

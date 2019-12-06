@@ -60,7 +60,7 @@ export class MenuPage {
 		}
 
 		if (page.pageName == "LivePage") {
-			// this.iab.create('https://livestream.com/FxxxxxBCWF/events/7167625', '_system');
+			this.iab.create('https://livestream.com/FBCWF/events/7167625', '_system');
 		} else {
 			if (this.nav.getActiveChildNavs()[0] && page.index != undefined) {
 				this.nav.getActiveChildNavs()[0].select(page.index);

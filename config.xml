@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="net.greyback.newhope" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>New Hope Church</name>
-    <description>Sermons and News for New Hope Church</description>
+<widget id="net.greyback.fbcwichitafalls" version="1.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>FBC Wichita Falls</name>
+    <description>Sermons and News for First Baptist Wichita Falls, Texas</description>
     <author email="info@greyback.net" href="http://greyback.net/">GreyBack Labs, LLP</author>
     <content src="index.html" />
     <access origin="*" />
@@ -23,7 +23,7 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="28" />
+	<preference name="android-targetSdkVersion" value="28" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
@@ -118,6 +118,6 @@
     <plugin name="cordova-plugin-media" spec="5.0.2">
         <variable name="KEEP_AVAUDIOSESSION_ALWAYS_ACTIVE" value="NO" />
     </plugin>
+    <engine name="ios" spec="^4.5.4" />
     <engine name="android" spec="^7.1.4" />
-    <engine name="ios" spec="~4.5.5" />
 </widget>
