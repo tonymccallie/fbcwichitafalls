@@ -11,7 +11,7 @@
 	</div>
 	<div *ngFor="let recent of latest">
 		<img *ngIf="recent.MessageSeries.MediaImage.filename" src="{{rootUrl}}/img/thumb/{{recent.MessageSeries.MediaImage.filename}}/width:1000/height:600/crop:true/zoom:auto" (click)="viewSeries(recent.MessageSeries)">
-		<img *ngIf="!recent.MessageSeries.MediaImage.filename" src="http://via.placeholder.com/1000x600?text=No+series+image" />
+		<img *ngIf="!recent.MessageSeries.MediaImage.filename" src="https://via.placeholder.com/1000x600?text=No+series+image" />
 	</div>
 	<ion-toolbar color="primary">
 		Latest Series
